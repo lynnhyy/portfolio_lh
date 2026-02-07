@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  /*variables classiques*/
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-paragraph: Arial, Verdana, Georgia, sans-serif; /*pas de redéfinition*/
+}
+
+@media (prefers-color-scheme: dark) {
+  /*variables thème sombre */
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@theme inline {
+  /*variables persos à utiliser dans les vue*/
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-paragraph: var(--font-paragraph)
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+}
+
+/*--------------------------------------------------*/
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-paragraph)
+} 
