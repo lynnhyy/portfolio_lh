@@ -1,33 +1,73 @@
 @import "tailwindcss";
-
+/*TODO : implement light theme*/
 :root {
   /*variables classiques*/
   --background: #ffffff;
   --foreground: #171717;
-  --font-paragraph: Arial, Verdana, Georgia, sans-serif; /*pas de redéfinition*/
+  --font-paragraph: Arial, Verdana, Georgia, sans-serif;
+
 }
 
 @media (prefers-color-scheme: dark) {
-  /*variables thème sombre */
+  /*variable dark */
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+  /*nav*/
+  --color-bg-nav: #000000; 
+  --color-text-nav: #ffffff;             
+  --color-bg-link: #1f2937;
+  --color-bg-link-hover: #374151;
+  --color-text-link: #e5e7eb;
+  --color-text-link-hover: #f3f4f6;
+  --color-bg-dropdown: #111827;          
+  --color-border-dropdown: #374151;      
+
+  /*home*/
+  --text-link: #93c5fd;
+  --text-link-hover: #bfdbfe;
+  --border-white: #ffffff;
+  --bg-white : #ffffff;
+  --skill-bg: rgba(255,255,255,0.5);
+  --button-text: #ffffff;
+  --button-border: #3b82f6;
+  --button-border-hover: #60a5fa;
+  --button-bg-hover: rgba(59, 130, 246, 0.125);
+  --banner-bg: rgba(30, 58, 138, 0.25);
+
   }
 }
 
-@theme inline {
-  /*variables persos à utiliser dans les vue*/
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-paragraph: var(--font-paragraph)
-  /* --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono); */
-}
 
 /*--------------------------------------------------*/
 
+/*general*/
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-paragraph)
 } 
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*home*/
+
+/*animate span in skills*/
+@keyframes skillFloat {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(3px, -4px); }
+  50%  { transform: translate(-2px, 3px); }
+  75%  { transform: translate(4px, -2px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.animate-skillFloat {
+  animation-name: skillFloat;
+  animation-duration: 6s;        /* plus lente */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+

@@ -1,85 +1,77 @@
-// import {
-//   UserGroupIcon,
-//   HomeIcon,
-//   DocumentDuplicateIcon,
-// } from '@heroicons/react/24/outline';
 'use client';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-// import clsx from 'clsx';
-//routes
+
 const links = [
   { name: 'Home', href: '/' },
-  { name: 'cv', href: '/cv'},
-  {name: 'contact', href:'/contact'}
+  { name: 'CV', href: '/cv' },
+  { name: 'Contact', href: '/contact' },
 ];
+
 const projectLinks = [
   { name: 'Project 1', href: '/projets/projet1' },
-  {name: 'Projet 2 patati patataaaa', href: '/projets/projet2'},
-  { name: 'Plus...', href: '/projets'},
+  { name: 'Project 2', href: '/projets/projet2' },
+  { name: 'Plus...', href: '/projets' },
 ];
 
 export default function NavLinks() {
-  /*Renvoie la barre de navigation */
+
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false); //pour afficher le contenu du menu mobile
-  const [projectsOpen, setProjectsOpen] = useState(false); //pour afficher les projets
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+  const lastScrollY = useRef(0);
+
+  /*Allow scroll nav*/
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY.current) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+      lastScrollY.current = window.scrollY;
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  /*Nav bar*/
   return (
-    <nav className="flex flex-col md:flex-row md:items-center md:gap-2 relative">
-      {/* Menu pour mobile - caché sur dektop*/}
-      <div className="md:hidden flex items-center mb-2">
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="p-2 bg-gray-100 rounded"
-        >
-          ☰
-        </button>
-      </div>
+    <nav
+      className={`relative transition-transform duration-300 z-50 ${
+        showNav ? 'translate-y-0' : '-translate-y-full'
+      } bg-[var(--color-bg-nav)] text-[var(--color-text-nav)]`}
+    >
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+        {/* Desktop links */}
+        <div className="hidden md:flex flex-1 gap-2">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className={`flex-1 text-center px-4 py-2 rounded-md font-medium text-sm ${
+                pathname === link.href
+                  ? 'bg-[var(--color-bg-link-hover)] text-[var(--color-text-link)]'
+                  : 'bg-[var(--color-bg-link)] text-[var(--color-text-link)] hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)]'
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
 
-      {/* Menu principal : récupération des liens et noms */}
-      <div
-        className={`flex flex-col md:flex-row md:items-center md:gap-2 ${
-          menuOpen ? 'block' : 'hidden'
-        } md:flex`}
-      >
-        {links.map((link) => (
-          <Link
-            key={link.name}
-            href={link.href}
-            className={`flex h-[48px] items-center justify-center gap-2 rounded-md p-3 text-sm font-medium ${
-              pathname === link.href
-                ? 'bg-blue-100 text-blue-600'
-                : 'bg-gray-100 text-black hover:bg-gray-200 hover:text-blue-600'
-            }`}
-          >
-            {link.name}
-          </Link>
-        ))}
-
-        {/* Dropdown Desktop */}
-        <div className="relative group md:block hidden">
-          <button
-            className={`flex h-[48px] items-center justify-center gap-2 rounded-md p-3 text-sm font-medium ${
-              pathname.startsWith('/projets')
-                ? 'bg-blue-100 text-blue-600'
-                : 'bg-gray-100 text-black hover:bg-gray-200 hover:text-blue-600'
-            }`}
-          >
-            Projets
-          </button>
-
-          <div className="absolute flex flex-column mt-1 w-48 bg-white border rounded shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50">
-            <div className="grid grid-cols-2 gap-0">
+          {/* Dropdown projects */}
+          <div className="relative group flex-1">
+            <button className="w-full text-center px-4 py-2 rounded-md font-medium text-sm bg-[var(--color-bg-link)] text-[var(--color-text-link)] hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)]">
+              Projets
+            </button>
+            <div className="absolute mt-1 w-full bg-[var(--color-bg-dropdown)] border border-[var(--color-border-dropdown)] rounded shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50">
               {projectLinks.map((p) => (
                 <Link
                   key={p.href}
                   href={p.href}
-                  className={`block px-4 py-2 text-sm ${
-                    pathname === p.href
-                      ? 'bg-blue-100 text-blue-600'
-                      : 'text-black hover:bg-gray-100 hover:text-blue-600'
-                  }`}
+                  className="block px-4 py-2 text-sm hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)]"
                 >
                   {p.name}
                 </Link>
@@ -88,35 +80,72 @@ export default function NavLinks() {
           </div>
         </div>
 
-        {/* Dropdown Mobile */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setProjectsOpen(!projectsOpen)}
-            className={`flex h-[48px] items-center justify-center gap-2 rounded-md p-3 text-sm font-medium ${
-              pathname.startsWith('/projets')
-                ? 'bg-blue-100 text-blue-600'
-                : 'bg-gray-100 text-black hover:bg-gray-200 hover:text-blue-600'
-            }`}
-          >
-            Projets
-          </button>
+        {/* Logo on the right */}
+        <div className="absolute right-4 top-1/2 -translate-y-1/2">
+          <Link href="/">
+            <img src="/window.svg" alt="Logo" className="h-10 w-auto" />
+          </Link>
+        </div>
 
-          {projectsOpen && (
-            <div className="flex flex-col mt-1 bg-white border rounded shadow-lg z-50">
-              {projectLinks.map((p) => (
+        {/* Mobile burger */}
+        <div className="md:hidden relative">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="p-2 bg-[var(--color-bg-link)] rounded z-50 relative"
+          >
+            ☰
+          </button>
+          {menuOpen && (
+            <div className="fixed top-0 left-0 h-screen w-1/2 bg-[var(--color-bg-dropdown)] border-r shadow-lg z-50 p-4 flex flex-col gap-2">
+              {/* Back button, TODO : change style */}
+              <button
+                className="block px-4 py-2 text-sm font-medium bg-[var(--color-bg-link)] text-[var(--color-text-link)] rounded-md hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)] transition-colors"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setProjectsOpen(false);
+                }}
+              >
+                Retour
+              </button>
+
+              {/* Mobile Links */}
+              {links.map((link) => (
                 <Link
-                  key={p.href}
-                  href={p.href}
-                  className={`block px-4 py-2 text-sm ${
-                    pathname === p.href
-                      ? 'bg-blue-100 text-blue-600'
-                      : 'text-black hover:bg-gray-100 hover:text-blue-600'
-                  }`}
-                  onClick={() => setProjectsOpen(false)}
+                  key={link.name}
+                  href={link.href}
+                  className="block px-4 py-2 text-sm font-medium bg-[var(--color-bg-link)] text-[var(--color-text-link)] rounded-md hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)] transition-colors"
+                  onClick={() => setMenuOpen(false)}
                 >
-                  {p.name}
+                  {link.name}
                 </Link>
               ))}
+
+              {/* Dropdown projects */}
+              <div>
+                <button
+                  onClick={() => setProjectsOpen(!projectsOpen)}
+                  className="block px-4 py-2 text-sm font-medium w-full text-left bg-[var(--color-bg-link)] text-[var(--color-text-link)] rounded-md hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)] transition-colors"
+                >
+                  Projets
+                </button>
+                {projectsOpen && (
+                  <div className="flex flex-col gap-2 mt-2 bg-[var(--color-bg-dropdown)] rounded-md p-2">
+                    {projectLinks.map((p) => (
+                      <Link
+                        key={p.href}
+                        href={p.href}
+                        className="block px-4 py-2 text-sm font-medium bg-[var(--color-bg-link)] text-[var(--color-text-link)] rounded-md hover:bg-[var(--color-bg-link-hover)] hover:text-[var(--color-text-link-hover)] transition-colors"
+                        onClick={() => {
+                          setMenuOpen(false);
+                          setProjectsOpen(false);
+                        }}
+                      >
+                        {p.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           )}
         </div>
