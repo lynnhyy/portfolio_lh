@@ -120,7 +120,7 @@ export default function Home() {
           {/* Photo */}
           <div className="md:w-1/3 flex">
             <img
-              src="window.svg"
+              src="/window.svg"
               alt="portrait"
               className="w-auto max-w-[240px] h-full rounded-xl border-3 border-[var(--border-white)] shadow-lg object-cover"
             />
