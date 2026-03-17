@@ -29,10 +29,10 @@ const projects = [
 
 
   const categories = [
-    { category: "Catégorie 1", skills: ["Skill", "Skill", "Skill", "Skill", "Skill"] },
-    { category: "Catégorie 2", skills: ["Skill", "Skill", "Skill", "Skill"] },
-    { category: "Catégorie 3", skills: ["Skill", "Skill", "Skill"] },
-    { category: "Catégorie 4", skills: ["Skill", "Skill", "Skill"] },
+    { category: "Applicatif", skills: ["Python", "C", "C++", "Java", "Flutter"] },
+    { category: "Web", skills: ["HTML", "CSS", "JavaScript", "PHP", "Symfony", "NextJS", "Angular"] },
+    { category: "Système et BD", skills: ["SQL", "NoSQL", "Docker", "Linux"] },
+    { category: "Autres", skills: ["Anglais", "Espagnol", "Management", "Git", "TensorFlow", "Blender", "UML"] },
   ];
 
 
@@ -74,24 +74,23 @@ export default function Home() {
         {/* Typing Text desktop */}
         <div className="w-full text-center font-mono text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
           <TypingText
-            text={"Enchanté, Lynn Hayot, développeur en informatique.\nBienvenue sur mon portfolio."}
+            text={"Enchanté, Lynn Hayot, développeur en informatique."}
             speed={60}
           />
         </div>
 
         {/* Fxed text mobile */}
         <div className="w-full text-center font-mono text-2xl sm:hidden">
-          Enchanté, Lynn Hayot, développeur en informatique. Bienvenue sur mon portfolio.
+          Enchanté, Lynn Hayot, développeur en informatique.
         </div>
 
         {/* Introduction text */}
         <div className="flex justify-center items-center w-full mt-8">
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
-            Proinde die funestis interrogationibus praestituto imaginarius iudex equitum
-            resedit magister adhibitis aliis iam quae essent agenda praedoctis, et
-            adsistebant hinc inde notarii, quid quaesitum esset, quidve responsum,
-            cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae
-          </p>
+          Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
+
+/!\ Attention, actuellement le détail de mes projets n'est pas encore ajouté, les différents projets seront ajoutés sous peu (22/03/2026 au plus tard) /!\
+</p>
         </div>
 
         {/* Continue Button -> go to next section */}
@@ -120,9 +119,9 @@ export default function Home() {
           {/* Photo */}
           <div className="md:w-1/3 flex">
             <img
-              src="/window.svg"
+              src="/perso/image-perso.jpg"
               alt="portrait"
-              className="w-auto max-w-[240px] h-full rounded-xl border-3 border-[var(--border-white)] shadow-lg object-cover"
+              className="w-auto max-w-[340px] h-full rounded-xl border-3 border-[var(--border-white)] shadow-lg object-cover"
             />
           </div>
 
@@ -139,10 +138,11 @@ export default function Home() {
 
               {/* Text*/}
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-justify text-[var(--foreground)]">
-                Proinde die funestis interrogationibus praestituto imaginarius iudex
-                equitum resedit magister adhibitis aliis iam quae essent agenda
-                praedoctis, et adsistebant hinc inde notarii, quid quaesitum esset,
-                quidve responsum, cursim ad Caesarem perferentes.
+                Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38), je recherche une formation en Master ou en école d'Ingénieur pour l'année 2025-2026.
+
+Passionnée par l'informatique et la créativité, j'ai pour objectif à terme de m'orienter dans le domaine du jeu vidéo et du multimédia. J'apprécie également beaucoup la programmation logicielle et le management et souhaite prendre le tems de développer mes compétences dans ces domaines. 
+
+Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions. N'hésitez donc pas à me contacter pour toute proposition de poste ou de projet.
               </p>
 
               {/* Button contacts*/}
@@ -463,10 +463,9 @@ export default function Home() {
             <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-white/30"></div>
             {/*formations list*/}
             {[
-              { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/"},
-              { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
-              { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
-              { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
+              { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
+              { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
+              { title: "vous ?", date: "2026 - .", icon: "/question.jpg", url : "/contact" },
             ].map((f, i) => (
               <div key={i} className="flex flex-col items-center text-center w-full">
                 <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
@@ -505,7 +504,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-x-0 top-1/2 h-[2px] bg-white/30 -translate-y-1/2"></div>
                 <div className="grid grid-cols-4 gap-x-8">
-                  {Array.from({ length: 4 }).map((_, i) => (
+                  {Array.from({ length: 3 }).map((_, i) => (
                     <div key={i} className="flex justify-center">
                       <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
                     </div>
@@ -518,11 +517,10 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-x-8">
                   {/*formations list*/}
                   {[
-                    { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/"},
-                    { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
-                    { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
-                    { title: "formation 1", date: "2026 - 2026", icon: "/window.svg", url : "/" },
-                  ].map((f, i) => (
+              { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
+              { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
+              { title: "vous ?", date: "2026 - .", icon: "/question.jpg", url : "/contact" },
+            ].map((f, i) => (
                     <div key={i} className="flex justify-center">
                       <a
                         href={f.url}
@@ -567,19 +565,19 @@ export default function Home() {
         <div className="w-full max-w-6xl flex flex-wrap justify-center gap-6">
           {[
             {
-              title: "Loisir 1",
+              title: "Sport",
               description:
-                "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis."
+                "Active et motivée, j'ai toujours pratiqué une activité sportive à côté de mes études. Que ce soit en club, ou seule. Parmi les sports qui m'ont marquée, je peux dire que le volley Ball  a toujours été une source d'enthousiasme, tandis que le Ninjutsu, art martial japonais, m'a beaucoup inspirée. "
             },
             {
-              title: "Loisir 2",
+              title: "Jeu vidéo et Multimédia",
               description:
-                "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis."
+                "Ma passion ! Depuis petite, les jeux vidéo et les animations bien réalisés ont toujours réussi à me toucher profondément, à contrario des films ou autres œuvres artistiques. Ils ont toujours su me remonter le moral, peu importe la situation. Parmi toutes les choses que j'ai pu tester dans ma vie, je pense que le jeu est de loin celle que j'ai préféré expérimenter. J'aime créer des univers et raconter des histoires, et j'aimerais retranscrire mon art sous la forme d'un média interactif pour en faire profiter les autres au maximum."
             },
             {
-              title: "Loisir 3",
+              title: "Culture Japonaise",
               description:
-                "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis."
+                "Comme la plupart des gens, j'ai commencé par lire des mangas avant de toucher plus particulièrement à la culture. J'ai vite découvert l'histoire du Japon médiéval et les traditions inscrites dans la culture japonaise. Je trouve que la culture de ce pays est vraiment poétique. Par ailleurs, le parler des Japonais est tout aussi mélodieux et apaisant.."
             }
           ].map((loisir, i) => (
             <article

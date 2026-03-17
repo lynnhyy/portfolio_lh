@@ -3,8 +3,8 @@
 import Image from "next/image";
 
 export default function Page() {
-  const imgSrc = "/window.svg";
-  const pdfSrc = "/cv.pdf";
+  const imgSrc = "/perso/cv-developpeur-informatique.png";
+  const pdfSrc = "/perso/cv-developpeur-informatique.pdf";
 
   return (
     <div className="w-full min-h-screen bg-transparent text-[var(--foreground)] px-4 py-12">

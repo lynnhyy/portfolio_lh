@@ -45,7 +45,7 @@ export default function Page() {
           {/* Photo */}
           <div className="w-40 h-40 rounded-full overflow-hidden border border-[var(--border-white)/12] shadow-lg">
             <Image
-              src="/window.svg"
+              src="/perso/image-perso.jpg"
               alt="Photo de profil"
               width={160}
               height={160}
@@ -61,7 +61,6 @@ export default function Page() {
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/window.svg" alt="Poste" className="w-4 h-4" />
               Développeur Informatique
             </p>
 
