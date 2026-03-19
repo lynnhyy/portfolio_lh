@@ -29,7 +29,7 @@ const projects = [
 
 
   const categories = [
-    { category: "Applicatif", skills: ["Python", "C", "C++", "Java", "Flutter"] },
+    { category: "Applicatif", skills: ["Python", "C", "C++", "Java", "Dart"] },
     { category: "Web", skills: ["HTML", "CSS", "JavaScript", "PHP", "Symfony", "NextJS", "Angular"] },
     { category: "Système et BD", skills: ["SQL", "NoSQL", "Docker", "Linux"] },
     { category: "Autres", skills: ["Anglais", "Espagnol", "Management", "Git", "TensorFlow", "Blender", "UML"] },
@@ -119,7 +119,7 @@ export default function Home() {
           {/* Photo */}
           <div className="md:w-1/3 flex">
             <img
-              src="/perso/image-perso.jpg"
+              src="/perso/portrait2-gris.png"
               alt="portrait"
               className="w-auto max-w-[340px] h-full rounded-xl border-3 border-[var(--border-white)] shadow-lg object-cover"
             />
@@ -246,7 +246,7 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
           {/* ---------- DESKTOP -----------*/}
           <div className="hidden md:block relative w-full">
             {/* Track  project */}
-            <div className="overflow-hidden w-full">
+            <div className="overflow-hidden pb-6">
               <div
                 className="flex transition-transform duration-500"
                 style={{ transform: `translateX(-${index * 100}%)` }}
@@ -266,8 +266,8 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
                       />
                     </div>
                     <div className="w-1/2 flex flex-col justify-center text-left">
-                      <h3 className="text-3xl font-semibold mb-4 text-[var(--foreground)]">{proj.title}</h3>
-                      <p className="text-xl leading-relaxed mb-8 text-[var(--foreground)]">{proj.description}</p>
+                      <h3 className="text-3xl text-center font-semibold mb-4 text-[var(--foreground)]">{proj.title}</h3>
+                      <p className="text-xl text-center leading-relaxed mb-8 text-[var(--foreground)]">{proj.description}</p>
                       <div className="flex justify-end">
                         <a href={`/projet${i}`} className="text-[var(--text-link)] hover:text-[var(--text-link-hover)] transition cursor-pointer">
                           Voir plus →
@@ -337,8 +337,8 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
                   />
                 </div>
                 <div className="w-full flex flex-col justify-center text-center">
-                  <h3 className="text-2xl font-semibold mb-3 text-[var(--foreground)]">{proj.title}</h3>
-                  <p className="text-lg leading-relaxed text-[var(--foreground)]">{proj.description}</p>
+                  <h3 className="text-2xl text-center font-semibold mb-3 text-[var(--foreground)]">{proj.title}</h3>
+                  <p className="text-lg text-center leading-relaxed text-[var(--foreground)]">{proj.description}</p>
                 </div>
               </div>
             ))}
@@ -365,7 +365,7 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
           {/*------------- DESKTOP ------------- */}
           <div className="hidden md:block relative w-full h-[460px]">
 
-            {/*Lines*/}
+            {/* Lines */}
             <div className="absolute top-[210px] left-[12%] w-[12%] h-[2px] bg-white/30"></div>
             <div className="absolute top-[210px] left-[24%] w-[8%] h-[2px] bg-white/30"></div>
 
@@ -382,67 +382,69 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
             <div className="absolute top-[190px] left-[82%] w-[2px] h-[50px] bg-white/30"></div>
             <div className="absolute top-[190px] left-[82%] w-[8%] h-[2px] bg-white/30"></div>
 
-            {/* Cubes*/}
-            <a href="/exp1" className="group absolute top-[180px] left-[8%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
+            {/* Cubes */}
+            <a href="https://www.les-services-de-louise-et-martin.fr" target="_blank" className="group absolute top-[180px] left-[8%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-louise-et-martin.png" alt="logo Louise et Martin" className="w-36 h-36 object-contain"/>
               </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp1</span>
+              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+                CDD Temps Partiel - Les Services de Louise et Martin
+              </span>
             </a>
 
-            <a href="/exp2" className="group absolute top-[180px] left-[24%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
+            <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[180px] left-[24%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain"/>
               </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp2</span>
+              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+                Stage - 11 semaines - ELYXOFT
+              </span>
             </a>
 
-            <a href="/exp3" className="group absolute top-[110px] left-[40%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
+            <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[110px] left-[40%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain"/>
               </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp3</span>
+              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+                CDD - 3 semaines - ELYXOFT
+              </span>
             </a>
 
-            <a href="/exp4" className="group absolute top-[210px] left-[58%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
+            <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[210px] left-[58%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain "/>
               </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp4</span>
+              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+                Alternance 2025-2026 - ELYXOFT
+              </span>
             </a>
 
-            <a href="/exp5" className="group absolute top-[210px] left-[74%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
+            <a href="/contact" target="_blank" className="group absolute top-[150px] left-[90%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/question.jpg" alt="logo contact" className="w-36 h-36 rounded-lg border object-contain "/>
               </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp5</span>
-            </a>
-
-            <a href="/exp6" className="group absolute top-[150px] left-[90%] -translate-x-1/2 flex flex-col items-center cursor-pointer">
-              <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/window.svg" alt="Formation" className="w-32 h-32 object-contain"/>
-              </div>
-              <span className="mt-2 text-sm text-white/70 group-hover:text-white">exp6</span>
+              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+                Vous ?
+              </span>
             </a>
           </div>
           {/* ----------------- MOBILE -------------- */}
           <div className="md:hidden flex flex-col items-center w-full gap-8">
             {[
-              { img: "/window.svg", label: "exp1", href: "/exp1" },
-              { img: "/window.svg", label: "exp2", href: "/exp2" },
-              { img: "/window.svg", label: "exp2", href: "/exp3" },
-              { img: "/window.svg", label: "exp3", href: "/exp4" },
-              { img: "/window.svg", label: "exp4", href: "/exp5" },
-              { img: "/window.svg", label: "exp5", href: "/exp6" },
+              { img: "/society/logo-louise-et-martin.png", label: "CDD Temps Partiel - Les Services de Louise et Martin", href: "https://www.les-services-de-louise-et-martin.fr" },
+              { img: "/society/logo-elyxoft.png", label: "Stage - 11 semaines - ELYXOFT", href: "https://www.elyxoft.fr" },
+              { img: "/society/logo-elyxoft.png", label: "CDD - 3 semaines - ELYXOFT", href: "https://www.elyxoft.fr" },
+              { img: "/society/logo-elyxoft.png", label: "Alternance 2025-2026 - ELYXOFT", href: "https://www.elyxoft.fr" },
+              { img: "/question.jpg", label: "Vous ?", href: "/contact" },
             ].map((cube, i) => (
               <div key={i} className="flex flex-col items-center w-full relative">
-                <a href={cube.href} className="group flex flex-col items-center cursor-pointer">
+                <a href={cube.href} target="_blank" className="group flex flex-col items-center cursor-pointer">
                   <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                    <img src={cube.img} alt="formation" className="w-32 h-32  object-contain"/>
+                    <img src={cube.img} alt="formation" className="w-32 h-32  object-contain rounded-lg border"/>
                   </div>
-                  <span className="mt-2 text-sm text-white/70 group-hover:text-white">{cube.label}</span>
+                  <span className="mt-2 text-center text-sm text-white/70 group-hover:text-white">{cube.label}</span>
                 </a>
-                {i < 5 && <div className="w-1 h-12 bg-white/30 mt-2"></div>}
+                {i < 4 && <div className="w-1 h-12 bg-white/30 mt-2"></div>}
               </div>
             ))}
           </div>
@@ -503,7 +505,7 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
               {/* Lines + points*/}
               <div className="relative">
                 <div className="absolute inset-x-0 top-1/2 h-[2px] bg-white/30 -translate-y-1/2"></div>
-                <div className="grid grid-cols-4 gap-x-8">
+                <div className="grid grid-cols-3 gap-x-8">
                   {Array.from({ length: 3 }).map((_, i) => (
                     <div key={i} className="flex justify-center">
                       <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
@@ -514,7 +516,7 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
 
               {/* Boxes */}
               <div>
-                <div className="grid grid-cols-4 gap-x-8">
+                <div className="grid grid-cols-3 gap-x-8">
                   {/*formations list*/}
                   {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},

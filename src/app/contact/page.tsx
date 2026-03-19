@@ -45,7 +45,7 @@ export default function Page() {
           {/* Photo */}
           <div className="w-40 h-40 rounded-full overflow-hidden border border-[var(--border-white)/12] shadow-lg">
             <Image
-              src="/perso/image-perso.jpg"
+              src="/perso/portrait1-gris.png"
               alt="Photo de profil"
               width={160}
               height={160}
