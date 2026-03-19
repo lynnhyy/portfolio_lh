@@ -8,17 +8,17 @@ import Image from "next/image";
 /* Projects container*/
 const projects = [
   {
-    title: "Projet 1",
-    image: "/window.svg",
+    title: "La Sorcière des Ombres",
+    image: "/projets/projet1/jaquette_jeu.png",
     description:
-      "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, etadsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae",
+    "La Sorcière des Ombres est un jeu narratif, intégrant énigmes et mécaniques, réalisé au cours d'une Game Jam éducative en septembre 2026.",
   },
   {
     title: "Projet 2",
-    image: "/window.svg",
+    image: "/projets/projet2/elylla_intro.png",
     description:
-    "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, etadsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae",
-  },
+    "Le jeu de la marque Elylla est un jeu sur le thème de tri de briques LEGO où l'objectif est de récupérer les bonnes pièces tout en évitant les mauvaises. Le jeu a été réalisé dans le cadre de mon alternance dans l'entreprise ELYXOFT.",
+    },
   {
     title: "Projet 3",
     image: "/window.svg",
@@ -89,7 +89,7 @@ export default function Home() {
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
           Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
 
-/!\ Attention, actuellement le détail de mes projets n'est pas encore ajouté, les différents projets seront ajoutés sous peu (22/03/2026 au plus tard) /!\
+/!\ Attention, actuellement les détails de mes projets ne sont pas encore tous ajoutés, les différents projets seront ajoutés sous peu (22/03/2026 au plus tard) /!\
 </p>
         </div>
 
@@ -140,9 +140,9 @@ export default function Home() {
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-justify text-[var(--foreground)]">
                 Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38), je recherche une formation en Master ou en école d'Ingénieur pour l'année 2025-2026.
 
-Passionnée par l'informatique et la créativité, j'ai pour objectif à terme de m'orienter dans le domaine du jeu vidéo et du multimédia. J'apprécie également beaucoup la programmation logicielle et le management et souhaite prendre le tems de développer mes compétences dans ces domaines. 
+Passionnée par l'informatique et la créativité, j'ai pour objectif à terme de m'orienter dans le domaine du jeu vidéo et du multimédia. J'apprécie également beaucoup la programmation logicielle et le management et souhaite prendre le temps de développer mes compétences dans ces domaines. 
 
-Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions. N'hésitez donc pas à me contacter pour toute proposition de poste ou de projet.
+Étant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions. N'hésitez donc pas à me contacter pour toute proposition de poste ou de projet.
               </p>
 
               {/* Button contacts*/}
@@ -269,7 +269,7 @@ Etant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions
                       <h3 className="text-3xl text-center font-semibold mb-4 text-[var(--foreground)]">{proj.title}</h3>
                       <p className="text-xl text-center leading-relaxed mb-8 text-[var(--foreground)]">{proj.description}</p>
                       <div className="flex justify-end">
-                        <a href={`/projet${i}`} className="text-[var(--text-link)] hover:text-[var(--text-link-hover)] transition cursor-pointer">
+                        <a href={`/projets/projet${i+1}`} className="text-[var(--text-link)] hover:text-[var(--text-link-hover)] transition cursor-pointer">
                           Voir plus →
                         </a>
                       </div>

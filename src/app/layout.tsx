@@ -52,13 +52,13 @@ export default function RootLayout({
 
     {/* Liens principaux */}
     <div className="flex flex-wrap justify-center gap-6 text-[var(--text-link)] text-sm md:text-base">
-      <a href="#contact" className="hover:text-[var(--text-link-hover)] transition">
+      <a href="/contact" className="hover:text-[var(--text-link-hover)] transition">
         Contact
       </a>
-      <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--text-link-hover)] transition">
+      <a href="/cv" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--text-link-hover)] transition">
         CV
       </a>
-      <a href="#projects" className="hover:text-[var(--text-link-hover)] transition">
+      <a href="/projets" className="hover:text-[var(--text-link-hover)] transition">
         Projets
       </a>
     </div>

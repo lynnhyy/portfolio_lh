@@ -8,18 +8,18 @@ export default function Page() {
   const projects = [
     {
       id: "projet-1",
-      title: "Projet 1 — Lorem Ipsum",
+      title: "La Sorcière des Ombres",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-      image: "/window.svg",
+        "La Sorcière des Ombres est un jeu narratif, intégrant énigmes et mécaniques, réalisé au cours d'une Game Jam éducative en septembre 2026.",
+      image: "/projets/projet1/jaquette_jeu.png",
       href: "/projets/projet1",
     },
     {
       id: "projet-2",
-      title: "Projet 2 — Dolor Sit Amet",
+      title: "Jeu de Elylla",
       description:
-        "Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui.",
-      image: "/window.svg",
+          "Le jeu de la marque Elylla est un jeu sur le thème de tri de briques LEGO où l'objectif est de récupérer les bonnes pièces tout en évitant les mauvaises. Le jeu a été réalisé dans le cadre de mon alternance dans l'entreprise ELYXOFT.",
+      image: "/projets/projet2/elylla_intro.png",
       href: "/projets/projet2",
     },
     {
