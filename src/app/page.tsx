@@ -14,16 +14,22 @@ const projects = [
     "La Sorcière des Ombres est un jeu narratif, intégrant énigmes et mécaniques, réalisé au cours d'une Game Jam éducative en septembre 2026.",
   },
   {
-    title: "Projet 2",
+    title: "Jeu de Elylla",
     image: "/projets/projet2/elylla_intro.png",
     description:
     "Le jeu de la marque Elylla est un jeu sur le thème de tri de briques LEGO où l'objectif est de récupérer les bonnes pièces tout en évitant les mauvaises. Le jeu a été réalisé dans le cadre de mon alternance dans l'entreprise ELYXOFT.",
     },
   {
-    title: "Projet 3",
-    image: "/window.svg",
+    title: "Chât'Odyssée",
+    image: "/projets/projet3/site1.png",
     description:
-            "Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit magister adhibitis aliis iam quae essent agenda praedoctis, etadsistebant hinc inde notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius imperio truci, stimulis reginae",
+            "Chât'Odyssée est une application web permettant de découvrir les châteaux de la Région Auvergne-Rhône-Alpes. Elle présente brièvement chacun d'entre eux et permet aux utilisateurs d'entrer leurs propres impressions.",
+  },
+  {
+    title: "PEP : ProEventPlanner",
+    image: "/projets/projet4/pep_accueil.png",
+    description:
+            "PEP : ProEventPlanner est une application lourde de gestion d'évènements en entreprise. Réalisée en Java et JavaFX, elle représente mon premier projet réalisé en équipe.",
   },
 ];
 
@@ -89,7 +95,7 @@ export default function Home() {
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
           Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
 
-/!\ Attention, actuellement les détails de mes projets ne sont pas encore tous ajoutés, les différents projets seront ajoutés sous peu (22/03/2026 au plus tard) /!\
+/!\ Attention, actuellement les détails de mes projets ne sont pas encore tous ajoutés, les différents projets seront ajoutés sous peu. /!\
 </p>
         </div>
 

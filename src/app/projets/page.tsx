@@ -24,27 +24,19 @@ export default function Page() {
     },
     {
       id: "projet-3",
-      title: "Projet 3 — Consectetur Adipiscing",
+      title: "Chât'Odyssée",
       description:
-        "Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere.",
-      image: "/window.svg",
+        "Chât'Odyssée est une application web permettant de découvrir les châteaux de la Région Auvergne-Rhône-Alpes. Elle présente brièvement chacun d'entre eux et permet aux utilisateurs d'entrer leurs propres impressions.",
+      image: "/projets/projet3/site1.png",
       href: "/projets/projet3",
     },
     {
       id: "projet-4",
-      title: "Projet 4 — Ultricies Sed",
+      title: "PEP : ProEventPlanner",
       description:
-        "Maecenas sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula.",
-      image: "/window.svg",
+        "PEP : ProEventPlanner est une application lourde de gestion d'évènements en entreprise. Réalisée en Java et JavaFX, elle représente mon premier projet réalisé en équipe.",
+      image: "/projets/projet4/pep_accueil.png",
       href: "/projets/projet4",
-    },
-    {
-      id: "projet-5",
-      title: "Projet 5 — Aenean Commodo",
-      description:
-        "Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
-      image: "/window.svg",
-      href: "/projets/projet5",
     },
   ];
 

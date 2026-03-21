@@ -12,6 +12,7 @@ const links = [
 const projectLinks = [
   { name: 'La Sorcière des Ombres', href: '/projets/projet1' },
   { name: 'Jeu de Elylla', href: '/projets/projet2' },
+  { name: "Chât'Odyssée", href: '/projets/projet3' },
   { name: 'Plus...', href: '/projets' },
 ];
 
