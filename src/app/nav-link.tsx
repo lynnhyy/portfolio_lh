@@ -83,7 +83,7 @@ export default function NavLinks() {
         {/* Logo on the right */}
         <div className="absolute right-4 top-1/2 -translate-y-1/2">
           <Link href="/">
-            <img src="/window.svg" alt="Logo" className="h-10 w-auto" />
+            <img src="/logo-ghost.png" alt="Logo" className="h-10 w-auto" />
           </Link>
         </div>
 

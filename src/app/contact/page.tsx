@@ -65,17 +65,17 @@ export default function Page() {
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/window.svg" alt="Ville" className="w-4 h-4" />
+              <img src="/location-white.png" alt="Ville" className="w-4 h-4" />
               Grenoble, France
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/window.svg" alt="Email" className="w-4 h-4" />
-              lynn.hayot@gmail.com
+              <img src="/mail-white.png" alt="Email" className="w-4 h-4" />
+              lynn.hayot(at)gmail.com
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/window.svg" alt="Téléphone" className="w-4 h-4" />
+              <img src="/phone-white.png" alt="Téléphone" className="w-4 h-4" />
               06 60 79 37 13
             </p>
           </div>

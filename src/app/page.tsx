@@ -324,7 +324,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
           {/* ---------- MOBILE -----------*/}
           <div className="flex gap-6 overflow-x-auto md:hidden scrollbar-hide px-2 mt-10">
             {projects.map((proj, i) => (
-              <div key={i} onClick={() => window.location.href = "#"} //page of project
+              <div key={i} onClick={() => window.location.href = "/projets/projet{i}"} //page of project
                 className="flex-shrink-0 w-[80%] sm:w-[70%] flex flex-col gap-6 items-center
                           bg-[var(--banner-bg)] bg-opacity-60 backdrop-blur-sm border border-[var(--border-white)/20] rounded-2xl
                           p-6 min-h-[400px] cursor-pointer"
