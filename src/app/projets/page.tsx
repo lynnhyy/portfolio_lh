@@ -38,6 +38,30 @@ export default function Page() {
       image: "/projets/projet4/pep_accueil.png",
       href: "/projets/projet4",
     },
+    {
+      id: "projet-5",
+      title: "Etude de données sur le Titanic",
+      description:
+        "Nous devions modéliser, puis implémenter une base de données et la remplir avec des données que nous avions mises à disposition, dans le but d'effectuer des requêtes pour répondre à la problématique.",
+      image: "/projets/projet5/cover.png",
+      href: "/projets/projet5",
+    },
+    {
+      id: "projet-6",
+      title: "Installation d'une Machine Client",
+      description:
+        "Le but de ce projet était de nous apprendre les bases de l’administration système en produisant un guide d’installation d’un système d’exploitation côté client, sous forme de carte mentale.",
+      image: "/projets/projet6/debian11.jpeg",
+      href: "/projets/projet6",
+    },
+    {
+      id: "projet-7",
+      title: "Installation d'une Machine Serveur",
+      description:
+        "Nous avions pour mission d’installer Debian 12 sur une machine, sans environnement graphique, en plus de configurer les logiciels Apache, PostgreSQL et PHP afin de recréer l’environnement d’une machine serveur. De plus, nous avons rédigé un guide d’installation en Anglais dans le but de garder une trace de nos acquis.",
+      image: "/projets/projet7/debian12.jpeg",
+      href: "/projets/projet7",
+    },
   ];
 
   return (

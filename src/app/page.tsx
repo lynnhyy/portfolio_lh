@@ -12,24 +12,49 @@ const projects = [
     image: "/projets/projet1/jaquette_jeu.png",
     description:
     "La Sorcière des Ombres est un jeu narratif, intégrant énigmes et mécaniques, réalisé au cours d'une Game Jam éducative en septembre 2026.",
+    href: "/projets/projet1",
   },
   {
     title: "Jeu de Elylla",
     image: "/projets/projet2/elylla_intro.png",
     description:
     "Le jeu de la marque Elylla est un jeu sur le thème de tri de briques LEGO où l'objectif est de récupérer les bonnes pièces tout en évitant les mauvaises. Le jeu a été réalisé dans le cadre de mon alternance dans l'entreprise ELYXOFT.",
-    },
+    href: "/projets/projet2",
+  },
   {
     title: "Chât'Odyssée",
     image: "/projets/projet3/site1.png",
     description:
             "Chât'Odyssée est une application web permettant de découvrir les châteaux de la Région Auvergne-Rhône-Alpes. Elle présente brièvement chacun d'entre eux et permet aux utilisateurs d'entrer leurs propres impressions.",
+    href: "/projets/projet3",
   },
   {
     title: "PEP : ProEventPlanner",
     image: "/projets/projet4/pep_accueil.png",
     description:
             "PEP : ProEventPlanner est une application lourde de gestion d'évènements en entreprise. Réalisée en Java et JavaFX, elle représente mon premier projet réalisé en équipe.",
+    href: "/projets/projet4",
+  },
+{
+    title: "Etude de données sur le Titanic",
+    description:
+      "Nous devions modéliser, puis implémenter une base de données et la remplir avec des données que nous avions mises à disposition, dans le but d'effectuer des requêtes pour répondre à la problématique.",
+    image: "/projets/projet5/cover.png",
+    href: "/projets/projet5",
+  },
+  {
+    title: "Installation d'une Machine Client",
+    description:
+      "Le but de ce projet était de nous apprendre les bases de l’administration système en produisant un guide d’installation d’un système d’exploitation côté client, sous forme de carte mentale.",
+    image: "/projets/projet6/debian11.jpeg",
+    href: "/projets/projet6",
+  },
+  {
+    title: "Installation d'une Machine Serveur",
+    description:
+      "Nous avions pour mission d’installer Debian 12 sur une machine, sans environnement graphique, en plus de configurer les logiciels Apache, PostgreSQL et PHP afin de recréer l’environnement d’une machine serveur. De plus, nous avons rédigé un guide d’installation en Anglais dans le but de garder une trace de nos acquis.",
+    image: "/projets/projet7/debian12.jpeg",
+    href: "/projets/projet7",
   },
 ];
 
@@ -275,7 +300,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                       <h3 className="text-3xl text-center font-semibold mb-4 text-[var(--foreground)]">{proj.title}</h3>
                       <p className="text-xl text-center leading-relaxed mb-8 text-[var(--foreground)]">{proj.description}</p>
                       <div className="flex justify-end">
-                        <a href={`/projets/projet${i+1}`} className="text-[var(--text-link)] hover:text-[var(--text-link-hover)] transition cursor-pointer">
+                        <a href={proj.href} className="text-[var(--text-link)] hover:text-[var(--text-link-hover)] transition cursor-pointer">
                           Voir plus →
                         </a>
                       </div>
@@ -330,7 +355,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
           {/* ---------- MOBILE -----------*/}
           <div className="flex gap-6 overflow-x-auto md:hidden scrollbar-hide px-2 mt-10">
             {projects.map((proj, i) => (
-              <div key={i} onClick={() => window.location.href = "/projets/projet{i}"} //page of project
+              <div key={i} onClick={() => window.location.href = proj.href} //page of project
                 className="flex-shrink-0 w-[80%] sm:w-[70%] flex flex-col gap-6 items-center
                           bg-[var(--banner-bg)] bg-opacity-60 backdrop-blur-sm border border-[var(--border-white)/20] rounded-2xl
                           p-6 min-h-[400px] cursor-pointer"
