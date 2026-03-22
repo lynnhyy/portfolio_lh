@@ -73,7 +73,7 @@ export default function Page() {
         </header>
 
         {/* Grid to display projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6">
           {projects.map((project) => (
             <Link
               key={project.id}
@@ -95,18 +95,18 @@ export default function Page() {
                 `}
               >
                 {/* Image */}
-                <div className="w-full md:w-1/3 h-44 md:h-auto relative flex-shrink-0 overflow-hidden p-2">
+                <div className="w-full md:w-1/2 ml-4 rounded-xl h-44 md:h-auto relative flex-shrink-0 overflow-hidden p-2">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "contain" }}
                     className="object-cover rounded-lg"
                   />
                 </div>
 
                 {/* Content */}
-                <div className="p-4 md:p-6 flex flex-col justify-center md:w-2/3">
+                <div className="p-4 md:p-6 flex flex-col justify-center md:w-1/2">
                   <div className="mb-2">
                     <h3 className="inline-block bg-[var(--banner-bg)]/90 px-2 py-1 rounded-md text-lg font-semibold text-[var(--foreground)]">
                       {project.title}

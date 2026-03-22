@@ -120,7 +120,7 @@ export default function Home() {
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
           Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
 
-/!\ Attention, actuellement les détails de mes projets ne sont pas encore tous ajoutés, les différents projets seront ajoutés sous peu. /!\
+Certains de mes projets ne sont pas encore présent, ou en cours, ils seront ajoutés sous peu.
 </p>
         </div>
 
