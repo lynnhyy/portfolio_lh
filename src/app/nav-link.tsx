@@ -43,7 +43,7 @@ export default function NavLinks() {
     <nav
       className={`relative transition-transform duration-300 z-50 ${
         showNav ? 'translate-y-0' : '-translate-y-full'
-      } bg-[var(--color-bg-nav)] text-[var(--color-text-nav)]`}
+      } bg-[var(--background)] text-[var(--color-text-nav)]`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Desktop links */}

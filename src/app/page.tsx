@@ -120,7 +120,7 @@ export default function Home() {
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
           Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
 
-Certains de mes projets ne sont pas encore présent, ou en cours, ils seront ajoutés sous peu.
+Certains de mes projets ne sont pas encore présents, ils seront ajoutés sous peu.
 </p>
         </div>
 
@@ -169,7 +169,7 @@ Certains de mes projets ne sont pas encore présent, ou en cours, ils seront ajo
 
               {/* Text*/}
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-justify text-[var(--foreground)]">
-                Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38), je recherche une formation en Master ou en école d'Ingénieur pour l'année 2025-2026.
+                Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38). Je recherche activement une alternance de 3 ans à partir de septembre 2026 afin de suivre la formation d'Ingénieur Informatique Expérience Interactive au CNAM d'Angoulême.
 
 Passionnée par l'informatique et la créativité, j'ai pour objectif à terme de m'orienter dans le domaine du jeu vidéo et du multimédia. J'apprécie également beaucoup la programmation logicielle et le management et souhaite prendre le temps de développer mes compétences dans ces domaines. 
 
@@ -498,7 +498,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
             {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
               { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
-              { title: "vous ?", date: "2026 - .", icon: "/question.jpg", url : "/contact" },
+              { title: "Ingénieur Informatique Expérience Interactive", date: "2026 - .", icon: "/formation/logo-cnam.png", url : "https://www.cnam.fr/formation/electronique-informatique-telecommunication/automatisme-informatique-industrielle/ingenieur-e-informatique-et-multimedia-technologies-du-jeu-video-et-systemes-interactifs" },
             ].map((f, i) => (
               <div key={i} className="flex flex-col items-center text-center w-full">
                 <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
@@ -552,7 +552,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                   {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
               { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
-              { title: "vous ?", date: "2026 - .", icon: "/question.jpg", url : "/contact" },
+              { title: "Ingénieur Informatique Expérience Interactive", date: "2026 - .", icon: "/formation/logo-cnam.png", url : "https://www.cnam.fr/formation/electronique-informatique-telecommunication/automatisme-informatique-industrielle/ingenieur-e-informatique-et-multimedia-technologies-du-jeu-video-et-systemes-interactifs" },
             ].map((f, i) => (
                     <div key={i} className="flex justify-center">
                       <a
@@ -600,17 +600,17 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
             {
               title: "Sport",
               description:
-                "Active et motivée, j'ai toujours pratiqué une activité sportive à côté de mes études. Que ce soit en club, ou seule. Parmi les sports qui m'ont marquée, je peux dire que le volley Ball  a toujours été une source d'enthousiasme, tandis que le Ninjutsu, art martial japonais, m'a beaucoup inspirée. "
+                "Active et motivée, j'ai toujours pratiqué une activité sportive à côté de mes études. Que ce soit en club, ou seule. Parmi les sports qui m'ont marquée, je peux dire que le volleyball  a toujours été une source d'enthousiasme, tandis que le Ninjutsu, art martial japonais, m'a beaucoup inspirée. "
             },
             {
               title: "Jeu vidéo et Multimédia",
               description:
-                "Ma passion ! Depuis petite, les jeux vidéo et les animations bien réalisés ont toujours réussi à me toucher profondément, à contrario des films ou autres œuvres artistiques. Ils ont toujours su me remonter le moral, peu importe la situation. Parmi toutes les choses que j'ai pu tester dans ma vie, je pense que le jeu est de loin celle que j'ai préféré expérimenter. J'aime créer des univers et raconter des histoires, et j'aimerais retranscrire mon art sous la forme d'un média interactif pour en faire profiter les autres au maximum."
+                "Ma passion ! Depuis toute petite, les jeux vidéo et les animations ont toujours réussi à me toucher profondément. Ils ont toujours su me remonter le moral, peu importe la situation. Le jeu vidéo est de loin ce que j'ai préféré expérimenter... et implémenter. J'aime créer des univers et raconter des histoires, et j'aimerais retranscrire mon art sous la forme d'un média interactif pour en faire profiter les autres au maximum."
             },
             {
               title: "Culture Japonaise",
               description:
-                "Comme la plupart des gens, j'ai commencé par lire des mangas avant de toucher plus particulièrement à la culture. J'ai vite découvert l'histoire du Japon médiéval et les traditions inscrites dans la culture japonaise. Je trouve que la culture de ce pays est vraiment poétique. Par ailleurs, le parler des Japonais est tout aussi mélodieux et apaisant.."
+                "Comme la plupart des gens, j'ai commencé par lire des mangas avant de toucher plus particulièrement à la culture japonaise. J'ai vite découvert l'histoire du Japon médiéval et les traditions inscrites dans la culture actuelle. Je trouve que ce pays a vraiment quelque chose de poétique."
             }
           ].map((loisir, i) => (
             <article

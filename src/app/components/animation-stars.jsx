@@ -5,7 +5,7 @@ export default function StarsBackground() {
   const stars = Array.from({ length: 40 });
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-black">
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-[var(--background)]">
       {stars.map((_, i) => {
         const size = Math.random() * 4 + 1;
         const left = Math.random() * 100;
@@ -29,7 +29,7 @@ export default function StarsBackground() {
               width: size,
               height: size,
               borderRadius: "50%",
-              background: "white",
+              background: "var(--foreground)",
               boxShadow: "0 0 6px white"
             }}
           />

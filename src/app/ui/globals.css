@@ -1,11 +1,32 @@
 @import "tailwindcss";
 /*TODO : implement light theme*/
 :root {
-  /*variables classiques*/
-  --background: #ffffff;
-  --foreground: #171717;
   --font-paragraph: Arial, Verdana, Georgia, sans-serif;
 
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+
+  /* nav */
+  --color-bg-nav: #f9fafb; 
+  --color-text-nav: #111827;             
+  --color-bg-link: #e5e7eb;
+  --color-bg-link-hover: #d1d5db;
+  --color-text-link: #1f2937;
+  --color-text-link-hover: #000000;
+  --color-bg-dropdown: #ffffff;          
+  --color-border-dropdown: #d1d5db;      
+
+  /* home */
+  --text-link: #2563eb;
+  --text-link-hover: #1d4ed8;
+  --border-white: #000000;
+  --bg-white: #ffffff;
+  --skill-bg: rgba(0, 0, 0, 0.05);
+  --button-text: #1f2937;
+  --button-border: #2563eb;
+  --button-border-hover: #1d4ed8;
+  --button-bg-hover: rgba(37, 99, 235, 0.1);
+  --banner-bg: rgba(59, 130, 246, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
