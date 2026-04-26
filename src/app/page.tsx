@@ -397,64 +397,64 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
           <div className="hidden md:block relative w-full h-[460px]">
 
             {/* Lines */}
-            <div className="absolute top-[210px] left-[12%] w-[12%] h-[2px] bg-white/30"></div>
-            <div className="absolute top-[210px] left-[24%] w-[8%] h-[2px] bg-white/30"></div>
+            <div className="absolute top-[210px] left-[12%] w-[12%] h-[2px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[210px] left-[24%] w-[8%] h-[2px] bg-[var(--foreground)]/30"></div>
 
-            <div className="absolute top-[150px] left-[32%] w-[2px] h-[60px] bg-white/30"></div>
-            <div className="absolute top-[150px] left-[32%] w-[8%] h-[2px] bg-white/30"></div>
-            <div className="absolute top-[150px] left-[40%] w-[8%] h-[2px] bg-white/30"></div>
+            <div className="absolute top-[150px] left-[32%] w-[2px] h-[60px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[150px] left-[32%] w-[8%] h-[2px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[150px] left-[40%] w-[8%] h-[2px] bg-[var(--foreground)]/30"></div>
 
-            <div className="absolute top-[150px] left-[48%] w-[2px] h-[90px] bg-white/30"></div>
+            <div className="absolute top-[150px] left-[48%] w-[2px] h-[90px] bg-[var(--foreground)]/30"></div>
 
-            <div className="absolute top-[240px] left-[48%] w-[10%] h-[2px] bg-white/30"></div>
-            <div className="absolute top-[240px] left-[58%] w-[16%] h-[2px] bg-white/30"></div>
-            <div className="absolute top-[240px] left-[74%] w-[8%] h-[2px] bg-white/30"></div>
+            <div className="absolute top-[240px] left-[48%] w-[10%] h-[2px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[240px] left-[58%] w-[16%] h-[2px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[240px] left-[74%] w-[8%] h-[2px] bg-[var(--foreground)]/30"></div>
 
-            <div className="absolute top-[190px] left-[82%] w-[2px] h-[50px] bg-white/30"></div>
-            <div className="absolute top-[190px] left-[82%] w-[8%] h-[2px] bg-white/30"></div>
+            <div className="absolute top-[190px] left-[82%] w-[2px] h-[50px] bg-[var(--foreground)]/30"></div>
+            <div className="absolute top-[190px] left-[82%] w-[8%] h-[2px] bg-[var(--foreground)]/30"></div>
 
             {/* Cubes */}
             <a href="https://www.les-services-de-louise-et-martin.fr" target="_blank" className="group absolute top-[180px] left-[8%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
-              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/society/logo-louise-et-martin.png" alt="logo Louise et Martin" className="w-36 h-36 object-contain"/>
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-louise-et-martin.png" alt="logo Louise et Martin" className="w-36 h-36 rounded-lg border object-contain"/>
               </div>
-              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+              <span className="mt-2 text-sm max-w-[170px] text-center text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">
                 CDD Temps Partiel - Les Services de Louise et Martin
               </span>
             </a>
 
             <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[180px] left-[24%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
-              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain"/>
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 rounded-lg border object-contain"/>
               </div>
-              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+              <span className="mt-2 text-sm max-w-[170px] text-center text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">
                 Stage - 11 semaines - ELYXOFT
               </span>
             </a>
 
             <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[110px] left-[40%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
-              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain"/>
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 rounded-lg border object-contain"/>
               </div>
-              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+              <span className="mt-2 text-sm max-w-[170px] text-center text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">
                 CDD - 3 semaines - ELYXOFT
               </span>
             </a>
 
             <a href="https://www.elyxoft.fr" target="_blank" className="group absolute top-[210px] left-[58%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
-              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 object-contain "/>
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                <img src="/society/logo-elyxoft.png" alt="logo ELYXOFT" className="w-36 h-36 rounded-lg border object-contain "/>
               </div>
-              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+              <span className="mt-2 text-sm max-w-[170px] text-center text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">
                 Alternance 2025-2026 - ELYXOFT
               </span>
             </a>
 
             <a href="/contact" target="_blank" className="group absolute top-[150px] left-[90%] -translate-x-1/2 flex flex-col items-center cursor-pointer z-20">
-              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+              <div className="w-36 h-36 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
                 <img src="/question.jpg" alt="logo contact" className="w-36 h-36 rounded-lg border object-contain "/>
               </div>
-              <span className="mt-2 text-sm max-w-[170px] text-center text-white/70 group-hover:text-white">
+              <span className="mt-2 text-sm max-w-[170px] text-center text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">
                 Vous ?
               </span>
             </a>
@@ -470,12 +470,12 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
             ].map((cube, i) => (
               <div key={i} className="flex flex-col items-center w-full relative">
                 <a href={cube.href} target="_blank" className="group flex flex-col items-center cursor-pointer">
-                  <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
+                  <div className="w-32 h-32 bg-[var(--banner-bg)] rounded-lg border border-[var(--foreground)]/20 backdrop-blur-sm flex items-center justify-center shadow-lg transition group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
                     <img src={cube.img} alt="formation" className="w-32 h-32  object-contain rounded-lg border"/>
                   </div>
-                  <span className="mt-2 text-center text-sm text-white/70 group-hover:text-white">{cube.label}</span>
+                  <span className="mt-2 text-center text-sm text-[var(--foreground)]/70 group-hover:text-[var(--foreground)]">{cube.label}</span>
                 </a>
-                {i < 4 && <div className="w-1 h-12 bg-white/30 mt-2"></div>}
+                {i < 4 && <div className="w-1 h-12 bg-[var(--foreground)]/30 mt-2"></div>}
               </div>
             ))}
           </div>
@@ -493,7 +493,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
 
           {/* -------- MOBILE ------------ */}
           <div className="md:hidden relative flex flex-col items-center gap-16">
-            <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-white/30"></div>
+            <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-[var(--foreground)]/30"></div>
             {/*formations list*/}
             {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
@@ -501,13 +501,13 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
               { title: "Ingénieur Informatique Expérience Interactive", date: "2026 - .", icon: "/formation/logo-cnam.png", url : "https://www.cnam.fr/formation/electronique-informatique-telecommunication/automatisme-informatique-industrielle/ingenieur-e-informatique-et-multimedia-technologies-du-jeu-video-et-systemes-interactifs" },
             ].map((f, i) => (
               <div key={i} className="flex flex-col items-center text-center w-full">
-                <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
+                <div className="w-6 h-6 bg-[var(--foreground)] rounded-full shadow-lg z-10"></div>
                 {/*Links to formation*/}
                 <a
                   href={f.url}
                   aria-label={f.title}
                   className="
-                    mt-6 bg-[var(--banner-bg)] backdrop-blur-sm border border-white/20
+                    mt-6 bg-[var(--banner-bg)] backdrop-blur-sm border border-[var(--foreground)]/20
                     rounded-xl px-6 py-5 shadow-lg w-64 min-h-[140px] flex flex-col justify-between
                     transition-transform duration-300 group cursor-pointer
                     hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
@@ -523,7 +523,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                     />
                   </div>
                   <h3 className="text-lg font-semibold break-words whitespace-normal">{f.title}</h3>
-                  <p className="text-white/60 text-sm break-words whitespace-normal">{f.date}</p>
+                  <p className="text-[var(--foreground)]/60 text-sm break-words whitespace-normal">{f.date}</p>
                 </a>
               </div>
             ))}
@@ -535,11 +535,11 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
 
               {/* Lines + points*/}
               <div className="relative">
-                <div className="absolute inset-x-0 top-1/2 h-[2px] bg-white/30 -translate-y-1/2"></div>
+                <div className="absolute inset-x-0 top-1/2 h-[2px] bg-[var(--foreground)]/30 -translate-y-1/2"></div>
                 <div className="grid grid-cols-3 gap-x-8">
                   {Array.from({ length: 3 }).map((_, i) => (
                     <div key={i} className="flex justify-center">
-                      <div className="w-6 h-6 bg-white rounded-full shadow-lg z-10"></div>
+                      <div className="w-6 h-6 bg-[var(--foreground)] rounded-full shadow-lg z-10"></div>
                     </div>
                   ))}
                 </div>
@@ -559,7 +559,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                         href={f.url}
                         aria-label={f.title}
                         className="
-                          bg-[var(--banner-bg)] backdrop-blur-sm border border-white/20
+                          bg-[var(--banner-bg)] backdrop-blur-sm border border-[var(--foreground)]/20
                           rounded-xl px-6 py-5 shadow-lg w-full min-h-[160px] flex flex-col justify-between
                           text-center transition-transform duration-300 group cursor-pointer
                           hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
@@ -575,7 +575,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                           />
                         </div>
                         <h3 className="font-semibold break-words whitespace-normal">{f.title}</h3>
-                        <p className="text-sm text-white/60 break-words whitespace-normal">{f.date}</p>
+                        <p className="text-sm text-[var(--foreground)]/60 break-words whitespace-normal">{f.date}</p>
                       </a>
                     </div>
                   ))}

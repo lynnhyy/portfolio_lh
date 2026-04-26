@@ -65,19 +65,24 @@ export default function Page() {
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/location-white.png" alt="Ville" className="w-4 h-4" />
+              <img src="/location-white.png" alt="Ville" className="w-4 h-4 invert dark:invert-0" />
               Grenoble, France
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/mail-white.png" alt="Email" className="w-4 h-4" />
+              <img src="/mail-white.png" alt="Email" className="w-4 h-4 invert dark:invert-0" />
               lynn.hayot(at)gmail.com
             </p>
 
             <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
-              <img src="/phone-white.png" alt="Téléphone" className="w-4 h-4" />
+              <img src="/linkedin-white.png" alt="LinkedIn" className="w-4 h-4 invert dark:invert-0" />
+              <a href="https://www.linkedin.com/in/lynn-hayot-a386852b2" target="_blank" className="underline">LinkedIn</a>
+            </p>
+            <p className="text-sm text-[var(--foreground)]/80 flex items-center justify-center md:justify-start gap-2">
+              <img src="/phone-white.png" alt="Téléphone" className="w-4 h-4 invert dark:invert-0" />
               06 60 79 37 13
             </p>
+            
           </div>
         </div>
 
