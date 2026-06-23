@@ -119,8 +119,6 @@ export default function Home() {
         <div className="flex justify-center items-center w-full mt-8">
           <p className="w-full max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[var(--foreground)] border-t-[var(--border-color)] pt-4">
           Bienvenue voyageur du web ! Bravo pour être arrivé sur mon portfolio. Ici, vous pourrez retrouver mes informations, ainsi qu'explorer les différents projets auxquels j'ai participé. Si vous le souhaitez, vous pourrez également consulter mes informations de contacts et m'envoyer un message.
-
-Certains de mes projets ne sont pas encore présents, ils seront ajoutés sous peu.
 </p>
         </div>
 
@@ -169,11 +167,10 @@ Certains de mes projets ne sont pas encore présents, ils seront ajoutés sous p
 
               {/* Text*/}
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-justify text-[var(--foreground)]">
-                Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38). Je recherche activement une alternance de 3 ans à partir de septembre 2026 afin de suivre la formation d'Ingénieur Informatique Expérience Interactive au CNAM d'Angoulême.
-
+                Je suis Lynn Hayot, étudiante en informatique. Actuellement en troisième et dernière année de BUT informatique à l'IUT 2 de Grenoble, et alternante dans l'entreprise ELYXOFT (38). Je suivrai le Master Informatique de Lyon 2 Lumières à partir de Septembre 2026.
 Passionnée par l'informatique et la créativité, j'ai pour objectif à terme de m'orienter dans le domaine du jeu vidéo et du multimédia. J'apprécie également beaucoup la programmation logicielle et le management et souhaite prendre le temps de développer mes compétences dans ces domaines. 
 
-Étant très curieuse, j'aime toucher à tout et découvrir de nouvelles passions. N'hésitez donc pas à me contacter pour toute proposition de poste ou de projet.
+Étant très curieuse, j'aime toucher à tout et découvrir de nouvelles technologies. N'hésitez donc pas à me contacter pour toute proposition de poste ou de projet.
               </p>
 
               {/* Button contacts*/}
@@ -498,7 +495,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
             {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
               { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
-              { title: "Ingénieur Informatique Expérience Interactive", date: "2026 - .", icon: "/formation/logo-cnam.png", url : "https://www.cnam.fr/formation/electronique-informatique-telecommunication/automatisme-informatique-industrielle/ingenieur-e-informatique-et-multimedia-technologies-du-jeu-video-et-systemes-interactifs" },
+              { title: "Master Informatique GAMAGORA", date: "2026 - .", icon: "/formation/logo-lyon2.png", url : "https://www.univ-lyon2.fr/master-2-informatique-gamagora" },
             ].map((f, i) => (
               <div key={i} className="flex flex-col items-center text-center w-full">
                 <div className="w-6 h-6 bg-[var(--foreground)] rounded-full shadow-lg z-10"></div>
@@ -552,7 +549,7 @@ Passionnée par l'informatique et la créativité, j'ai pour objectif à terme d
                   {[
               { title: "Baccalauréat Informatique/NSI - Section binationale", date: "2023", icon: "/formation/logo-aiguerande.jpg", url : "https://aiguerande.ent.auvergnerhonealpes.fr/"},
               { title: "BUT Informatique (3ème année)", date: "2023 - 2026", icon: "/formation/logo-iut2.png", url : "https://iut2.univ-grenoble-alpes.fr/" },
-              { title: "Ingénieur Informatique Expérience Interactive", date: "2026 - .", icon: "/formation/logo-cnam.png", url : "https://www.cnam.fr/formation/electronique-informatique-telecommunication/automatisme-informatique-industrielle/ingenieur-e-informatique-et-multimedia-technologies-du-jeu-video-et-systemes-interactifs" },
+              { title: "Master Informatique GAMAGORA", date: "2026 - .", icon: "/formation/logo-lyon2.png", url : "https://www.univ-lyon2.fr/master-2-informatique-gamagora" },
             ].map((f, i) => (
                     <div key={i} className="flex justify-center">
                       <a

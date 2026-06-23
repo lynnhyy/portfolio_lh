@@ -17,15 +17,14 @@ export default function Page() {
 
         {/* Preview */}
         <div className="rounded-xl overflow-hidden border border-[var(--border-white)/12] shadow-lg bg-[var(--banner-bg)]/30 mb-6">
-          <div className="relative w-full aspect-[2/3] md:aspect-[3/4]">
-            <Image
-              src={imgSrc}
-              alt="Aperçu du CV"
-              fill
-              priority
-              style={{ objectFit: "contain" }}
-            />
-          </div>
+          <Image
+            src={imgSrc}
+            alt="Aperçu"
+            width={1200}
+            height={1200}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Buttons */}
