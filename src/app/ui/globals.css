@@ -29,11 +29,11 @@
   --banner-bg: rgba(59, 130, 246, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
+.dark {
   /*variable dark */
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+  --background: #0a0a0a;
+  --foreground: #ededed;
 
   /*nav*/
   --color-bg-nav: #000000; 
@@ -61,7 +61,7 @@
   --elyxoft-bg: rgba(126, 0, 138, 0.25);
   
 }
-}
+
 
 /*--------------------------------------------------*/
 

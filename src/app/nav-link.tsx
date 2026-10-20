@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ThemeToggle from '@/theme/theme_toggle';
 
 const links = [
   { name: 'Home', href: '/' },
@@ -83,10 +84,15 @@ export default function NavLinks() {
         </div>
 
         {/* Logo on the right */}
-        <div className="absolute right-4 top-1/2 -translate-y-1/2">
-          <Link href="/">
-            <img src="/logo-ghost.png" alt="Logo" className="h-10 w-auto" />
-          </Link>
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-4">
+          <div> 
+            <ThemeToggle />
+          </div>
+          <div>
+            <Link href="/">
+              <img src="/logo-ghost.png" alt="Logo" className="h-10 w-auto" />
+            </Link>
+          </div>
         </div>
 
         {/* Mobile burger */}
