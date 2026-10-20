@@ -7,6 +7,7 @@ const links = [
   { name: 'Home', href: '/' },
   { name: 'CV', href: '/cv' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Experiences', href: '/experiences'}
 ];
 
 const projectLinks = [
